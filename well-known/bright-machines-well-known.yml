@@ -1,0 +1,77 @@
+generated: '2026-08-01'
+method: probed
+source: live HTTPS probes of every Bright Machines host found in apis.yml + DNS
+summary: |
+  No /.well-known/ discovery documents are published on any Bright Machines host.
+  Every probed path returned the WordPress 404 page. No security.txt, no OIDC/OAuth
+  discovery, no api-catalog, no ai-plugin, and no A2A agent card at either the
+  canonical /.well-known/agent-card.json or the legacy /.well-known/agent.json path.
+  Recorded as a negative probe result, not a gap to be manufactured.
+hosts:
+- host: www.brightmachines.com
+  note: corporate site (WordPress behind Cloudflare); HTML pages return a Cloudflare
+    challenge (403) to non-browser clients, but static/unknown paths resolve to the
+    origin 404 so these probes are conclusive.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: brightmachines.com
+  note: apex; same origin as www
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: api.brightmachines.com
+  note: >-
+    DNS CNAME exists to
+    ae7b953b1b39c4e53a8a73e72112a07d-e307a80a4b2a7bcd.elb.us-east-2.amazonaws.com
+    but that AWS ELB no longer resolves to any address — a dangling CNAME. The host
+    is therefore not reachable and no contract could be probed. Evidence of an
+    internal/customer API tier, NOT a public API surface.
+  documents:
+  - path: /openapi.json
+    status: 0
+    error: host unresolvable (dangling CNAME)
+- host: app.brightmachines.com
+  note: resolves to CloudFront (13.35.93.98) but the TLS handshake fails (no certificate
+    served for this name) — customer application tier, not publicly reachable.
+  documents: []
+subdomains_checked_nxdomain:
+- docs.brightmachines.com
+- developer.brightmachines.com
+- developers.brightmachines.com
+- apis.brightmachines.com
+- status.brightmachines.com
+- trust.brightmachines.com
+- security.brightmachines.com
+- portal.brightmachines.com
+- help.brightmachines.com
+- console.brightmachines.com
+- cloud.brightmachines.com
+- brightware.brightmachines.com
+x-evidence:
+  fetched: '2026-08-01'
+  method: curl HTTPS GET with browser User-Agent; dig for DNS

@@ -1,0 +1,45 @@
+# Bright Machines
+
+> Bright Machines is a San Francisco software-defined manufacturing company (founded 2018 by Amar Hanspal and Lior Susan) building a full-stack intelligent automation platform for electronics and AI-infrastructure assembly. Its Microfactory combines modular Bright Robotic Cells with Brightware — a platform operating system that orchestrates hardware, runs a machine-vision "Smart Skills" perception stack, and delivers manufacturing-execution services for work orders, material management and real-time production KPIs. Bright Data unifies component, process and enterprise-system data through secure APIs and auditable data flows; Bright Designer turns product CAD into assembly-ready digital twins on NVIDIA Omniverse and Microsoft Azure.
+
+## API surface
+
+Bright Machines publishes **no public API**. There is no developer portal, no API reference,
+no OpenAPI/AsyncAPI/GraphQL contract, no SDKs on any public package registry, no CLI,
+no hosted MCP server and no A2A agent card. The platform's APIs (Brightware/Bright Data
+integrations into MES, ERP and Azure) are delivered to customers under commercial
+engagement rather than as a self-serve public product. Probed 2026-08-01 — see
+`well-known/bright-machines-well-known.yml` for the full negative-result record.
+
+## Company
+
+- [Home](https://www.brightmachines.com/): Company home page.
+- [About](https://www.brightmachines.com/about/): Company background, leadership and mission.
+- [Careers](https://www.brightmachines.com/careers/): Open roles and benefits.
+- [Contact Us](https://www.brightmachines.com/contact-us/): Sales, partnership and support contact.
+- [Terms of Use](https://www.brightmachines.com/terms-of-use/): Website terms.
+- [Privacy Policy](https://www.brightmachines.com/privacy-policy/): Privacy practices.
+
+## Platform and products
+
+- [Platform](https://www.brightmachines.com/platform/): The Microfactory platform — Brightware software, Bright Robotic Cells, Bright Data.
+- [Technology](https://www.brightmachines.com/technology/): Robotics, AI/computer vision, and the data hub.
+- [Capabilities](https://www.brightmachines.com/capabilities/): Assembly, inspection and test capabilities.
+- [Bright Designer](https://www.brightmachines.com/news/bright-designer/): Web application turning product CAD into assembly-ready digital twins using NVIDIA Omniverse on Microsoft Azure.
+- [Microsoft Azure collaboration](https://www.brightmachines.com/news/bright-machines-collaborates-with-microsoft-azure-to-deliver-software-defined-manufacturing/): Cloud integration for software-defined manufacturing.
+
+## Content
+
+- [Blogs](https://www.brightmachines.com/blogs/): Insights on robotics, AI and smart factories.
+- [News](https://www.brightmachines.com/news/): Company announcements and press.
+- [Videos](https://www.brightmachines.com/videos/): Product and platform video library.
+
+## Code
+
+- [GitHub organization](https://github.com/brightmachines): Official org (created 2019); zero public repositories as of 2026-08-01.
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/bright-machines/refs/heads/main/apis.yml): APIs.json index for this provider.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/bright-machines/refs/heads/main/security/bright-machines-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/bright-machines/refs/heads/main/well-known/bright-machines-well-known.yml): Discovery-surface probe results.

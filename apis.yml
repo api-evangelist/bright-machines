@@ -1,17 +1,38 @@
 aid: bright-machines
 name: Bright Machines
-description: 'Bright Machines is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Bright Machines is a San Francisco-based software-defined manufacturing
+  company founded in 2018 by Amar Hanspal and Lior Susan that builds a full-stack intelligent
+  automation platform for electronics and AI-infrastructure assembly. Its Microfactory
+  pairs modular Bright Robotic Cells with Brightware, a platform operating system that
+  orchestrates hardware, runs a machine-vision "Smart Skills" perception stack, and
+  provides manufacturing-execution services for work orders, material management and
+  real-time production KPIs. Bright Data, the company''s data layer, unifies component,
+  process and enterprise-system data through secure APIs and auditable data flows, and
+  Bright Designer turns product CAD into assembly-ready digital twins using NVIDIA Omniverse
+  on Microsoft Azure. The company has raised roughly $279M from Eclipse, BlackRock, NVIDIA,
+  Microsoft, Jabil and others. All platform and data interfaces are delivered to customers
+  under commercial engagement; Bright Machines publishes no public developer portal, API
+  documentation, SDKs or machine-readable API contracts.'
 url: https://raw.githubusercontent.com/api-evangelist/bright-machines/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-no-public-api
 specificationVersion: '0.20'
 created: '2026-08-01'
 modified: '2026-08-01'
+image: https://avatars.githubusercontent.com/u/49670654?v=4
 tags:
 - Company
+- Manufacturing
+- Industrial Automation
+- Robotics
+- Artificial Intelligence
+- Computer Vision
+- Digital Twin
+- Electronics
+- Smart Factory
+- Supply Chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +41,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.brightmachines.com/
+- type: About
+  url: https://www.brightmachines.com/about/
+- type: Platform
+  url: https://www.brightmachines.com/platform/
+- type: Technology
+  url: https://www.brightmachines.com/technology/
+- type: Capabilities
+  url: https://www.brightmachines.com/capabilities/
+- type: Blog
+  url: https://www.brightmachines.com/blogs/
+- type: News
+  url: https://www.brightmachines.com/news/
+- type: Videos
+  url: https://www.brightmachines.com/videos/
+- type: Support
+  url: https://www.brightmachines.com/contact-us/
+- type: Careers
+  url: https://www.brightmachines.com/careers/
+- type: TermsOfService
+  url: https://www.brightmachines.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.brightmachines.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/brightmachines
+- type: SecondaryMarket
   url: https://forgeglobal.com/bright-machines_stock/
+- type: DomainSecurity
+  url: security/bright-machines-domain-security.yml
+- type: LLMsTxt
+  url: llms/bright-machines-llms.txt
+x-enrichment:
+  date: '2026-08-01'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
