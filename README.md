@@ -64,27 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bright Machines is a San Francisco-based software-defined manufacturing company founded in 2018 by Amar Hanspal and Lior Susan. Its Microfactory pairs modular Bright Robotic Cells with **Brightware**, a platform operating system that orchestrates hardware, runs a machine-vision "Smart Skills" perception stack, and provides manufacturing-execution services for work orders, material management and real-time production KPIs. **Bright Data** unifies component, process and enterprise-system data through secure APIs and auditable data flows, and **Bright Designer** turns product CAD into assembly-ready digital twins using NVIDIA Omniverse on Microsoft Azure. The company has raised roughly $279M from investors including Eclipse, BlackRock, NVIDIA, Microsoft and Jabil.
+Bright Machines is a San Francisco-based software-defined manufacturing company founded in 2018 by Amar Hanspal and Lior Susan that builds a full-stack intelligent automation platform for electronics and AI-infrastructure assembly. Its Microfactory pairs modular Bright Robotic Cells with Brightware, a platform operating system that orchestrates hardware, runs a machine-vision "Smart Skills" perception stack, and provides manufacturing-execution services for work orders, material management and real-time production KPIs. Bright Data, the company's data layer, unifies component, process and enterprise-system data through secure APIs and auditable data flows, and Bright Designer turns product CAD into assembly-ready digital twins using NVIDIA Omniverse on Microsoft Azure. The company has raised roughly $279M from Eclipse, BlackRock, NVIDIA, Microsoft, Jabil and others. All platform and data interfaces are delivered to customers under commercial engagement; Bright Machines publishes no public developer portal, API documentation, SDKs or machine-readable API contracts.
 
-- Website: https://www.brightmachines.com/
-- Platform: https://www.brightmachines.com/platform/
-- GitHub: https://github.com/brightmachines
-- Secondary market: https://forgeglobal.com/bright-machines_stock/
+**Areas:** Company · Manufacturing · Industrial Automation · Robotics · Artificial Intelligence · Computer Vision · Digital Twin · Electronics · Smart Factory · Supply Chain
 
-## API surface
+## Bright Machines on APIs.io
 
-**No public API.** Enrichment pass 2026-08-01 found no developer portal, no API reference, no
-OpenAPI/Swagger/AsyncAPI/GraphQL contract, no SDKs on npm/PyPI/crates, no CLI, no hosted MCP
-server and no A2A agent card. `api.brightmachines.com` exists in DNS but is a dangling CNAME to a
-retired AWS ELB; `app.brightmachines.com` serves no valid certificate — both are customer/internal
-tiers, not a public API. Brightware and Bright Data integrations (MES, ERP, Azure) are delivered
-under commercial engagement. Full negative-result record in `well-known/`.
+Everything profiled for Bright Machines is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bright-machines/](https://apis.io/providers/bright-machines/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Path | Type | Method |
-|---|---|---|
-| `apis.yml` | APIs.json index | — |
-| `security/bright-machines-domain-security.yml` | DomainSecurity | probed |
-| `well-known/bright-machines-well-known.yml` | discovery probe record | probed |
-| `llms/bright-machines-llms.txt` | LLMsTxt | generated |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bright Machines Domain Security](https://apis.io/security/bright-machines/bright-machines-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.brightmachines.com/)
+- [Support](https://www.brightmachines.com/contact-us/)
+- [Blog](https://www.brightmachines.com/blogs/)
+- [Terms of service](https://www.brightmachines.com/terms-of-use/)
+- [Privacy policy](https://www.brightmachines.com/privacy-policy/)
+- [GitHub](https://github.com/brightmachines)
+
+## API Evangelist rating
+
+**Kin Score 11.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bright-machines/](https://apis.io/providers/bright-machines/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bright Machines: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bright-machines/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
